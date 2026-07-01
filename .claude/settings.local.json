@@ -19,7 +19,10 @@
       "Bash(python \"C:\\\\Users\\\\Admin\\\\.claude\\\\plugins\\\\cache\\\\agricidaniel-seo\\\\claude-seo\\\\1.8.2\\\\scripts\\\\fetch_page.py\" \"http://localhost:5173/\")",
       "Bash(python \"C:\\\\Users\\\\Admin\\\\.claude\\\\plugins\\\\cache\\\\agricidaniel-seo\\\\claude-seo\\\\1.8.2\\\\scripts\\\\google_auth.py\" --check)",
       "Bash(python \"C:\\\\Users\\\\Admin\\\\.claude\\\\plugins\\\\cache\\\\agricidaniel-seo\\\\claude-seo\\\\1.8.2\\\\scripts\\\\backlinks_auth.py\" --check)",
-      "Bash(curl -s \"http://localhost:5173/\")"
+      "Bash(curl -s \"http://localhost:5173/\")",
+      "Bash(node -e \"const m = require\\('lucide-react'\\); console.log\\(Object.keys\\(m\\).filter\\(k=>/insta/i.test\\(k\\)\\)\\)\")",
+      "Bash(node -e \"const m = require\\('lucide-react'\\); console.log\\(Object.keys\\(m\\).length\\)\")",
+      "Bash(node -e ' *)"
     ]
   }
 }
