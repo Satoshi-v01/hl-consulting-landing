@@ -22,7 +22,11 @@
       "Bash(curl -s \"http://localhost:5173/\")",
       "Bash(node -e \"const m = require\\('lucide-react'\\); console.log\\(Object.keys\\(m\\).filter\\(k=>/insta/i.test\\(k\\)\\)\\)\")",
       "Bash(node -e \"const m = require\\('lucide-react'\\); console.log\\(Object.keys\\(m\\).length\\)\")",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(python3 -c \"import cairosvg\")",
+      "Bash(node -e \"require\\('sharp'\\)\")",
+      "Bash(npx --yes sharp-cli --version)",
+      "Bash(npx --yes sharp-cli -i public/favicon.svg -o public/apple-touch-icon.png resize 180 180)"
     ]
   }
 }
