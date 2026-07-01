@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import { Mail, MapPin, MessageCircle, Phone, Send } from 'lucide-react'
+import { MapPin, MessageCircle, Phone, Send } from 'lucide-react'
 import { BRAND, CONTACT_SERVICES_OPTIONS } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const INITIAL_FORM = { name: '', email: '', phone: '', service: '', message: '' }
 
 const CONTACT_INFO = [
-  { icon: Mail,           label: 'Correo electrónico', value: BRAND.email,   href: `mailto:${BRAND.email}` },
   { icon: Phone,          label: 'Teléfono',           value: BRAND.phone,   href: `tel:${BRAND.phone}` },
   { icon: MessageCircle,  label: 'WhatsApp',           value: BRAND.phone,   href: BRAND.whatsapp },
   { icon: MapPin,         label: 'Ubicación',          value: BRAND.address, href: null },
@@ -41,7 +40,7 @@ export default function Contact() {
       setSubmitted(true)
       setForm(INITIAL_FORM)
     } catch {
-      alert('Hubo un problema al enviar. Por favor escribinos directamente a ' + BRAND.email)
+      alert('Hubo un problema al enviar. Por favor escribinos por WhatsApp o intentá nuevamente.')
     } finally {
       setSubmitting(false)
     }

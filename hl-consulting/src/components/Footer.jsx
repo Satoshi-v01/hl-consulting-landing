@@ -36,12 +36,6 @@ export default function Footer() {
               {BRAND.tagline}. Soluciones contables para PYMEs y personas físicas en Paraguay.
             </p>
             <a
-              href={`mailto:${BRAND.email}`}
-              className="text-xs font-semibold text-accent hover:text-accent-light transition-colors duration-200 block mb-3"
-            >
-              {BRAND.email}
-            </a>
-            <a
               href={BRAND.instagram}
               target="_blank"
               rel="noopener noreferrer"
