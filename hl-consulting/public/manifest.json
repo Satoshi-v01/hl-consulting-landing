@@ -1,0 +1,17 @@
+{
+  "name": "HL Consulting",
+  "short_name": "HL Consulting",
+  "description": "Contabilidad y asesoría fiscal para PYMEs en Paraguay",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#faf9f7",
+  "theme_color": "#1c3045",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

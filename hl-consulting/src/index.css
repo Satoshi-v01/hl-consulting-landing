@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary:       #1c3045;
+  --color-primary-light: #243d57;
+  --color-primary-dark:  #111f2e;
+  --color-accent:        #b8956a;
+  --color-accent-light:  #cca880;
+  --color-accent-dark:   #9a7a52;
+  --color-surface:       #faf9f7;
+  --color-surface-alt:   #f3f1ed;
+  --color-text:          #1a1a1a;
+  --color-text-muted:    #5a6070;
+  --color-border:        #e4e0da;
+
+  --font-family-sans: 'Montserrat', sans-serif;
+}
+
+/* ─── Reset ─────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+#root { width: 100%; }
+
+/* ─── Focus visible (accessibility) ─────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* ─── Hero background pattern ────────────────────────────── */
+.hero-pattern {
+  background-image:
+    linear-gradient(rgba(184, 149, 106, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184, 149, 106, 0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* ─── Hero stagger animations ────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ─── Scroll reveal ──────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  will-change: opacity, transform;
+  transition:
+    opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children inside a reveal container */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: opacity, transform;
+  transition:
+    opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-stagger.in-view > *:nth-child(1) { opacity: 1; transform: none; transition-delay:   0ms; }
+.reveal-stagger.in-view > *:nth-child(2) { opacity: 1; transform: none; transition-delay:  80ms; }
+.reveal-stagger.in-view > *:nth-child(3) { opacity: 1; transform: none; transition-delay: 160ms; }
+.reveal-stagger.in-view > *:nth-child(4) { opacity: 1; transform: none; transition-delay: 240ms; }
+.reveal-stagger.in-view > *:nth-child(5) { opacity: 1; transform: none; transition-delay: 320ms; }
+.reveal-stagger.in-view > *:nth-child(6) { opacity: 1; transform: none; transition-delay: 400ms; }
+
+/* ─── Form fade transition ───────────────────────────────── */
+.form-fade {
+  animation: fadeUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ─── Reduced motion overrides ───────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal, .reveal-stagger > * {
+    opacity: 1;
+    transform: none;
+  }
+}
