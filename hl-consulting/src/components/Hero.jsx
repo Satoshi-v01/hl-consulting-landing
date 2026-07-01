@@ -98,7 +98,7 @@ export default function Hero() {
                 Años de experiencia respaldan cada servicio que brindamos.
               </p>
 
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-3 gap-6">
                 {STATS.map((stat) => (
                   <div key={stat.label}>
                     <div className="text-3xl font-extrabold mb-1 text-accent">

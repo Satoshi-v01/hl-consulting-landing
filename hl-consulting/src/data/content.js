@@ -73,10 +73,9 @@ export const SERVICES = [
 ]
 
 export const STATS = [
-  { value: '+200', label: 'Clientes atendidos' },
-  { value: '98%', label: 'Satisfacción' },
+  { value: 'Amplia', label: 'Cartera de clientes' },
+  { value: 'Garantizada', label: 'Satisfacción' },
   { value: '+8 años', label: 'De experiencia' },
-  { value: '0', label: 'Multas por error' },
 ]
 
 export const WHY_US = [

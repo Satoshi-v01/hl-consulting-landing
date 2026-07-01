@@ -25,7 +25,7 @@ export default function WhyUs() {
               Somos un equipo de profesionales comprometidos con el éxito de cada cliente. No importa si sos una empresa en crecimiento o un emprendedor independiente, te acompañamos en cada paso.
             </p>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-3 gap-4">
               {STATS.map((stat) => (
                 <div
                   key={stat.label}
