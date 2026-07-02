@@ -7,9 +7,6 @@ export default function Hero() {
       className="relative flex items-start pt-14 bg-primary"
       style={{ clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 56px), 0 100%)' }}
     >
-      {/* Graph-paper grid pattern — atmospheric depth */}
-      <div className="absolute inset-0 hero-pattern" />
-
       {/* Radial accent glow */}
       <div
         className="absolute inset-0 opacity-12 pointer-events-none"
