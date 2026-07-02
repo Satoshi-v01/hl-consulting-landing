@@ -79,13 +79,6 @@ export const SERVICES = [
   },
 ]
 
-export const SERVICES_CTA = {
-  title: '¿Necesitás algo distinto?',
-  description: 'Contanos tu situación puntual y armamos una solución a medida para tu negocio.',
-  buttonLabel: 'Hablemos',
-  href: '#contacto',
-}
-
 export const STATS = [
   { value: 'Amplia', label: 'Cartera de clientes' },
   { value: 'Garantizada', label: 'Satisfacción' },
