@@ -25,16 +25,16 @@ export default function WhyUs() {
               Somos un equipo de profesionales comprometidos con el éxito de cada cliente. No importa si sos una empresa en crecimiento o un emprendedor independiente, te acompañamos en cada paso.
             </p>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4">
               {STATS.map((stat) => (
                 <div
                   key={stat.label}
-                  className="p-5 rounded-xl bg-surface border border-border"
+                  className="p-3 sm:p-5 rounded-xl bg-surface border border-border"
                 >
-                  <div className="text-2xl font-extrabold mb-1 text-primary">
+                  <div className="text-lg sm:text-2xl font-extrabold mb-1 text-primary leading-tight">
                     {stat.value}
                   </div>
-                  <div className="text-xs font-semibold uppercase tracking-wider text-text-muted">
+                  <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-text-muted leading-snug">
                     {stat.label}
                   </div>
                 </div>
