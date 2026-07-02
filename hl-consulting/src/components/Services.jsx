@@ -13,6 +13,9 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const ICON_MAP = { FileText, ClipboardList, Building2, Briefcase, ShieldCheck, BarChart2, TrendingUp }
 
+// Must match the grid-cols-* values on the services grid below (md and lg breakpoints).
+const GRID_COLUMNS = { md: 2, lg: 3 }
+
 export default function Services() {
   const headerRef = useScrollReveal()
   const gridRef   = useScrollReveal({ threshold: 0.05, rootMargin: '0px 0px -40px 0px' })
@@ -41,14 +44,20 @@ export default function Services() {
           ref={gridRef}
           className="reveal-stagger grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-l border-border"
         >
-          {SERVICES.map((service) => {
+          {SERVICES.map((service, index) => {
             const Icon = ICON_MAP[service.icon]
+
+            // A lone card left alone in the final row (remainder of 1) leaves the
+            // rest of that row borderless and empty — stretch it to fill instead.
+            const isLast = index === SERVICES.length - 1
+            const spanMd = isLast && SERVICES.length % GRID_COLUMNS.md === 1 ? 'md:col-span-2' : ''
+            const spanLg = isLast && SERVICES.length % GRID_COLUMNS.lg === 1 ? 'lg:col-span-3' : ''
 
             return (
               <div
                 key={service.id}
-                className="group relative p-8 lg:p-10 border-b border-r border-border overflow-hidden
-                           cursor-pointer transition-colors duration-200 hover:bg-surface-alt"
+                className={`group relative p-8 lg:p-10 border-b border-r border-border overflow-hidden
+                           cursor-pointer transition-colors duration-200 hover:bg-surface-alt ${spanMd} ${spanLg}`}
               >
                 {/* Accent bar — slides in from left on hover */}
                 <div className="absolute left-0 top-0 w-0.5 h-0 bg-accent transition-all duration-300 group-hover:h-full" />
