@@ -44,11 +44,12 @@ export default function WhyUs() {
 
           {/* Right — Why us cards */}
           <div ref={rightRef} className="reveal-stagger grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {WHY_US.map((item) => {
+            {WHY_US.map((item, index) => {
               const Icon = ICON_MAP[item.icon]
               return (
                 <div
                   key={item.title}
+                  style={{ '--reveal-index': index }}
                   className="p-6 rounded-xl bg-surface border border-border transition-all duration-200
                              hover:border-accent hover:shadow-[0_4px_20px_rgba(184,149,106,0.1)]"
                 >
