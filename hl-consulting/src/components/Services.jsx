@@ -5,12 +5,13 @@ import {
   Briefcase,
   ShieldCheck,
   BarChart2,
+  TrendingUp,
   ArrowRight,
 } from 'lucide-react'
 import { SERVICES } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
-const ICON_MAP = { FileText, ClipboardList, Building2, Briefcase, ShieldCheck, BarChart2 }
+const ICON_MAP = { FileText, ClipboardList, Building2, Briefcase, ShieldCheck, BarChart2, TrendingUp }
 
 export default function Services() {
   const headerRef = useScrollReveal()

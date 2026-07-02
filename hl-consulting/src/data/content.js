@@ -70,6 +70,13 @@ export const SERVICES = [
     description:
       'Revisamos en profundidad el funcionamiento de tu organización para maximizar la eficiencia operativa.',
   },
+  {
+    id: 'asesoria-financiera',
+    icon: 'TrendingUp',
+    title: 'Asesoría Financiera',
+    description:
+      'Te ayudamos a planificar, proyectar y tomar decisiones financieras informadas para el crecimiento sostenible de tu negocio.',
+  },
 ]
 
 export const STATS = [

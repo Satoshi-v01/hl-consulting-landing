@@ -33,7 +33,7 @@ export default function Hero() {
               className="animate-fade-up text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6 text-surface"
               style={{ animationDelay: '100ms' }}
             >
-              Tu contabilidad,{' '}
+              Contabilidad para PYMEs,{' '}
               <span className="italic font-light text-accent">
                 sin complicaciones.
               </span>

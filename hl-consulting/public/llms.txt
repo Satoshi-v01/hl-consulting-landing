@@ -1,7 +1,7 @@
 # HL Consulting
 > Estudio de contabilidad y asesoría fiscal en Asunción, Paraguay.
 
-HL Consulting ofrece servicios contables para PYMEs y personas físicas: declaraciones juradas de impuestos, inscripción en el RUC, constitución de empresas (EAS), formalización de negocios, evaluación de control interno y auditoría de procesos.
+HL Consulting ofrece servicios contables y financieros para PYMEs y personas físicas: declaraciones juradas de impuestos, inscripción en el RUC, constitución de empresas (EAS), formalización de negocios, evaluación de control interno, auditoría de procesos y asesoría financiera.
 
 ## Servicios
 
@@ -11,6 +11,7 @@ HL Consulting ofrece servicios contables para PYMEs y personas físicas: declara
 - **Formalización de Negocios**: Conversión de emprendimientos informales en empresas legalmente estructuradas.
 - **Evaluación del Control Interno**: Análisis de procesos internos para detectar riesgos y mejorar la transparencia.
 - **Auditoría de Procesos**: Revisión del funcionamiento organizacional para maximizar la eficiencia operativa.
+- **Asesoría Financiera**: Planificación, proyección y acompañamiento en decisiones financieras para el crecimiento sostenible del negocio.
 
 ## Proceso de trabajo
 
