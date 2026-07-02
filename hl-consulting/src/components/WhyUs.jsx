@@ -31,10 +31,10 @@ export default function WhyUs() {
                   key={stat.label}
                   className="min-w-0 p-2.5 sm:p-5 rounded-xl bg-surface border border-border"
                 >
-                  <div className="text-base sm:text-2xl font-extrabold mb-1 text-primary leading-tight break-words">
+                  <div className="text-xs sm:text-2xl font-extrabold mb-1 text-primary leading-tight whitespace-nowrap">
                     {stat.value}
                   </div>
-                  <div className="text-[9px] sm:text-xs font-semibold uppercase tracking-normal sm:tracking-wider text-text-muted leading-snug break-words">
+                  <div className="text-[9px] sm:text-xs font-semibold uppercase tracking-normal sm:tracking-wider text-text-muted leading-snug">
                     {stat.label}
                   </div>
                 </div>
