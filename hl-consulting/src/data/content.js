@@ -47,7 +47,7 @@ export const SERVICES = [
     icon: 'Building2',
     title: 'Constitución de EAS',
     description:
-      'Constituimos tu Empresa por Acciones Simplificada con asesoría integral en cada etapa del trámite.',
+      'Constituimos tu Empresa por Acciones Simplificadas con asesoría integral en cada etapa del trámite.',
   },
   {
     id: 'formalizacion-negocios',
