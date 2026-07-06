@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react'
-import { PROCESS_STEPS } from '../data/content'
+import { PROCESS_SECTION, PROCESS_STEPS } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function Process() {
@@ -14,13 +14,13 @@ export default function Process() {
         {/* Header */}
         <div ref={headerRef} className="reveal text-center mb-20">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest mb-4 px-3 py-1.5 rounded-full bg-accent/15 text-accent">
-            Cómo trabajamos
+            {PROCESS_SECTION.eyebrow}
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-surface">
-            Simple, claro y sin sorpresas.
+            {PROCESS_SECTION.title}
           </h2>
           <p className="mt-4 text-base max-w-lg mx-auto leading-relaxed text-surface/65">
-            Nuestro proceso está diseñado para que el cliente siempre sepa qué está pasando y cuáles son los próximos pasos.
+            {PROCESS_SECTION.description}
           </p>
         </div>
 

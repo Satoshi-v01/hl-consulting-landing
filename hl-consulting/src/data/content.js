@@ -119,6 +119,13 @@ export const WHY_US = [
   },
 ]
 
+export const PROCESS_SECTION = {
+  eyebrow: 'Cómo trabajamos',
+  title: 'Vas a saber siempre en qué está tu contabilidad.',
+  description:
+    'Nuestro proceso está diseñado para que el cliente siempre sepa qué está pasando y cuáles son los próximos pasos.',
+}
+
 export const PROCESS_STEPS = [
   {
     step: '01',
