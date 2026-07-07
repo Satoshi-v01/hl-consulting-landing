@@ -54,7 +54,7 @@ export const SERVICES = [
     icon: 'Briefcase',
     title: 'Formalización de Negocios',
     description:
-      'Convertimos tu emprendimiento informal en una empresa legalmente estructurada y lista para crecer.',
+      'Convertimos tu emprendimiento en una empresa legalmente estructurada y lista para crecer.',
   },
   {
     id: 'control-interno',
