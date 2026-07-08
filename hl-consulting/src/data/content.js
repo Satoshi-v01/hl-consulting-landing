@@ -12,8 +12,8 @@ export const BRAND = {
   email: 'hiaralugovill@gmail.com',
   phone: '+595 983 098 129',
   whatsapp: 'https://wa.me/595983098129',
-  instagram: 'https://instagram.com/hlconsulting',
-  instagramHandle: '@hlconsulting',
+  instagram: 'https://instagram.com/hlconsulting.py',
+  instagramHandle: '@hlconsulting.py',
   address: 'Asunción, Paraguay',
   copyright: `© ${new Date().getFullYear()} HL Consulting. Todos los derechos reservados.`,
   // Obtener en https://formspree.io → New Form → pegar el ID aquí
