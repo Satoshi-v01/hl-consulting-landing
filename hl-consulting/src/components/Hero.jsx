@@ -83,32 +83,29 @@ export default function Hero() {
           </div>
 
           {/* Right — Stats card */}
-          <div
-            className="hidden md:block animate-fade-up"
-            style={{ animationDelay: '200ms' }}
-          >
-            <div className="rounded-2xl p-8 bg-surface/6 border border-surface/10 backdrop-blur-sm">
-              <h2 className="text-xl font-bold mb-2 text-surface">
+          <div className="animate-fade-up" style={{ animationDelay: '200ms' }}>
+            <div className="rounded-2xl p-6 sm:p-8 bg-surface/6 border border-surface/10 backdrop-blur-sm">
+              <h2 className="text-lg sm:text-xl font-bold mb-2 text-surface">
                 Resultados que hablan
               </h2>
-              <p className="text-sm mb-8 text-surface/55">
+              <p className="text-sm mb-6 sm:mb-8 text-surface/55">
                 Años de experiencia respaldan cada servicio que brindamos.
               </p>
 
-              <div className="grid grid-cols-3 gap-6">
+              <div className="grid grid-cols-3 gap-3 sm:gap-6">
                 {STATS.map((stat) => (
-                  <div key={stat.label}>
-                    <div className="text-3xl font-extrabold mb-1 text-accent">
+                  <div key={stat.label} className="min-w-0">
+                    <div className="text-base sm:text-2xl md:text-3xl font-extrabold mb-1 text-accent leading-tight whitespace-nowrap">
                       {stat.value}
                     </div>
-                    <div className="text-xs font-semibold uppercase tracking-wider text-surface/50">
+                    <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-normal sm:tracking-wider text-surface/50 leading-snug">
                       {stat.label}
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-8 pt-6 border-t border-surface/8">
+              <div className="mt-6 sm:mt-8 pt-6 border-t border-surface/8">
                 <p className="text-xs font-semibold uppercase tracking-widest mb-2 text-accent">
                   Cumplimiento regulatorio
                 </p>
