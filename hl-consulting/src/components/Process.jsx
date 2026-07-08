@@ -32,7 +32,7 @@ export default function Process() {
 
                 {/* Step number */}
                 <div
-                  className="text-8xl font-extrabold leading-none select-none mb-5 text-accent/25"
+                  className="text-6xl sm:text-7xl lg:text-8xl font-extrabold leading-none select-none mb-5 text-accent/25"
                 >
                   {item.step}
                 </div>

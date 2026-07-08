@@ -53,7 +53,7 @@ export default function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden cursor-pointer p-2 text-surface hover:text-accent transition-colors duration-200"
+          className="md:hidden cursor-pointer -mr-2 p-3 text-surface hover:text-accent transition-colors duration-200"
           onClick={() => setMenuOpen((v) => !v)}
           aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
           aria-expanded={menuOpen}

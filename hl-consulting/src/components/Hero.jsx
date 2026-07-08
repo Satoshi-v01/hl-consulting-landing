@@ -17,7 +17,7 @@ export default function Hero() {
       />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full relative z-10 pt-14 pb-20">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
 
           {/* Left — Copy with stagger animation */}
           <div>
@@ -84,7 +84,7 @@ export default function Hero() {
 
           {/* Right — Stats card */}
           <div
-            className="hidden lg:block animate-fade-up"
+            className="hidden md:block animate-fade-up"
             style={{ animationDelay: '200ms' }}
           >
             <div className="rounded-2xl p-8 bg-surface/6 border border-surface/10 backdrop-blur-sm">
