@@ -92,10 +92,10 @@ export default function Hero() {
                 Años de experiencia respaldan cada servicio que brindamos.
               </p>
 
-              <div className="grid grid-cols-3 gap-x-2 gap-y-4 sm:gap-6">
+              <div className="grid grid-cols-3 gap-1.5 sm:gap-4">
                 {STATS.map((stat) => (
                   <div key={stat.label} className="min-w-0">
-                    <div className="text-xs sm:text-2xl md:text-3xl font-extrabold mb-1 text-accent leading-tight whitespace-nowrap">
+                    <div className="text-xs sm:text-2xl font-extrabold mb-1 text-accent leading-tight whitespace-nowrap">
                       {stat.value}
                     </div>
                     <div className="text-[9px] sm:text-xs font-semibold uppercase tracking-normal sm:tracking-wider text-surface/50 leading-snug">
